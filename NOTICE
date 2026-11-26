@@ -1,0 +1,81 @@
+grh_full_proof
+AI-generated bilingual reconstruction of the proposed Dirichlet GRH proof
+
+Upstream research and formalization
+----------------------------------
+The upstream README credits the underlying proof to Levent Alpöge working
+with Claude. Alpöge's announcement is available at https://alpo.ge/remark.pdf.
+The shorter Lean 4 formalization was produced by Luke Sernau and colleagues
+at Anthropic with Claude. It builds on Mathlib.
+
+Pinned Lean source
+https://github.com/lsernau/grh-lean/tree/72fead102f663d5c7a407964a13dc0cf9d977207
+
+Reconstruction
+--------------
+ChatGPT generated the English and Simplified Chinese manuscripts dated
+26 November 2026. The PDFs recast the argument in natural language and
+mathematical notation, adding expository text, intermediate arguments, and
+bibliographic references. They are research drafts for study and review.
+The machine checks reported by the upstream project apply to its Lean code.
+The upstream sources above should be cited for the underlying proof.
+
+License and upstream notices
+----------------------------
+Apache License, Version 2.0 (see LICENSE), applies to the upstream-derived
+material and is offered for this distribution to the extent the distributor
+can grant rights. The two notices below are reproduced from the pinned Lean
+project and describe those upstream editions and their build dependencies.
+
+Upstream notice for the readable edition
+Source https://github.com/lsernau/grh-lean/blob/72fead102f663d5c7a407964a13dc0cf9d977207/grh/NOTICE
+
+GRH: a Lean 4 proof of the Generalized Riemann Hypothesis for Dirichlet L-functions (readable edition)
+Copyright 2026 Anthropic, PBC
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product is a rewriting of Levent Alpöge's Lean proof (see README.md). src/Statements.lean and the names and
+types of the five theorems in src/Main.lean are taken from that proof unchanged; lakefile.toml is adapted from it.
+
+This product depends on, but does not include, Lean 4 (https://github.com/leanprover/lean4) and Mathlib
+(https://github.com/leanprover-community/mathlib4), both under the Apache License, Version 2.0, and Mathlib's
+dependencies. The build tool fetches Mathlib and its dependencies from their public repositories at the revisions
+pinned in lake-manifest.json: batteries, aesop, Qq, ProofWidgets4, import-graph, LeanSearchClient and plausible
+under the Apache License, Version 2.0, and Cli (leanprover/lean4-cli) under the MIT License (Copyright (c) 2021
+mhuisi).
+
+Some declarations, or parts of their proofs, adapt definitions, statements and proofs from Mathlib, with changes
+(copyright the Mathlib authors, Apache License, Version 2.0).
+See ATTRIBUTION.md.
+
+Declaration-level attribution for this edition
+https://github.com/lsernau/grh-lean/blob/72fead102f663d5c7a407964a13dc0cf9d977207/grh/ATTRIBUTION.md
+
+Upstream notice for the compact edition
+Source https://github.com/lsernau/grh-lean/blob/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact/NOTICE
+
+GRH: a Lean 4 proof of the Generalized Riemann Hypothesis for Dirichlet L-functions (compact edition)
+Copyright 2026 Anthropic, PBC
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product is a rewriting of Levent Alpöge's Lean proof (see README.md). src/Statements.lean and the names and
+types of the five theorems in src/Main.lean are taken from that proof unchanged; lakefile.toml is adapted from it.
+
+This product depends on, but does not include, Lean 4 (https://github.com/leanprover/lean4) and Mathlib
+(https://github.com/leanprover-community/mathlib4), both under the Apache License, Version 2.0, and Mathlib's
+dependencies. The build tool fetches Mathlib and its dependencies from their public repositories at the revisions
+pinned in lake-manifest.json: batteries, aesop, Qq, ProofWidgets4, import-graph, LeanSearchClient and plausible
+under the Apache License, Version 2.0, and Cli (leanprover/lean4-cli) under the MIT License (Copyright (c) 2021
+mhuisi).
+
+src/Lib/General/LinearAlgebra/Base.lean restates about twenty lemma statements on matrices from Mathlib
+(copyright the Mathlib authors, Apache License, Version 2.0) for classical decidability.
+
+Some declarations, or parts of their proofs, adapt definitions, statements and proofs from Mathlib, with changes
+(copyright the Mathlib authors, Apache License, Version 2.0).
+See ATTRIBUTION.md.
+
+Declaration-level attribution for this edition
+https://github.com/lsernau/grh-lean/blob/72fead102f663d5c7a407964a13dc0cf9d977207/grh-compact/ATTRIBUTION.md
